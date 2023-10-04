@@ -1,12 +1,20 @@
 GET http://localhost:3001/api/notes
 
 ### 
-DELETE http://localhost:3001/api/notes/1
+DELETE http://localhost:3001/api/notes/
 
 ###
 POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
-   
+   "content": "HTML IS A LANGUAGE PROGRAM",
+   "important": true
+}
+
+###
+PUT http://localhost:3001/api/notes/6514f6c4dfcca19fc6ee8040
+
+{
+   "important": true
 }
